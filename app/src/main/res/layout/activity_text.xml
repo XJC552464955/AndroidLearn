@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity"
+    android:background="@mipmap/bg">
+
+    <!--
+        android:textSize="20sp"   字体大小
+        android:textColor="#ff0000"    字体颜色
+        android:lineSpacingExtra="20sp"  行间距
+        android:lineSpacingMultiplier="2" 行倍距，与lineSpacingExtra只能选一种
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/long_text"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:lineSpacingMultiplier="2"></TextView>
+
+
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="80sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/short_txt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add_photo"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@mipmap/add_photo"-->
+<!--        android:background="#0000FFFF"/>-->
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"/>
+    <!--
+        android:inputType="number"  #限制输入类型
+        number  正整数
+        numberDecimal 小数
+        numberSigned    正负整数
+        textPassword  文本密码
+        numberPassword  数字密码
+        numberSigned|numberDecimal   用’|'号可以使用多种输入类型
+        ....
+
+        android:hint="PassWord"   输入框提示信息
+        android:textColorHint="#ffffff"   提示信息颜色
+        android:maxLength="12"   限制最大输入长度
+    -->
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Name and Surname"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:background="@mipmap/border"/>
+
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    android:textStyle="italic"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:inputType="textEmailAddress"
+    android:hint="Email Address"
+    android:textColorHint="#ffffff"
+    android:gravity="center"
+    android:background="@mipmap/border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:background="@mipmap/border"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textPassword"
+        android:hint="PassWord"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:maxLength="12"
+        android:background="@mipmap/border"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn"
+        android:text="Register"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:onClick="register"/>
+
+
+</LinearLayout>
